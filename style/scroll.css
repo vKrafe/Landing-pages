@@ -1,0 +1,27 @@
+html {
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+
+/* Убрать скролл по умолчанию */
+body::-webkit-scrollbar {
+	width: 1.1rem;
+}
+
+/* Оновной скролл, по которому будет двигаться ползунок */
+body::-webkit-scrollbar-track {
+	background: var(--scrollbar-track);
+	box-shadow: 0 0 0.15rem var(--scrollbar-track-shadow) inset;
+}
+
+/* Ползунок */
+body::-webkit-scrollbar-thumb {
+	background: var(--scrollbar-thumb);
+	border-radius: 0.6rem;
+	border: 0.2rem solid var(--scrollbar-track);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background: var(--scrollbar-thumb-hover);
+	cursor: pointer;
+}

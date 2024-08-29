@@ -1,0 +1,24 @@
+:root {
+	--white: #ffffff;
+	--grey: #dfdede;
+	--shadow-white: rgba(255, 255, 255, 0.917);
+	--green: #22ff00;
+	--shadow-green: rgb(45, 248, 102);
+	--yellow: rgb(255, 255, 0, 1);
+	--bg-opacity: rgb(0, 0, 0, 0.5);
+	--bg: #2d2c2c;
+	--scrollbar-track: #d4d4d4;
+	--scrollbar-track-shadow: rgba(0, 0, 0, 0.2);
+	--scrollbar-thumb: #939393;
+	--scrollbar-thumb-hover: #7c7c7c;
+	--front-button-bg: #e9e8e8;
+	--front-button-text: #626262;
+	--front-button-shadow: rgba(46, 46, 46, 1);
+	--tab-item-bg: #c4c4c4;
+	--tab-item-text: #1e1c1c;
+	--tab-title-text: rgb(171 11 228);
+	--ff-main: Nozhik;
+	--ff-minor: Crooker;
+	--ff-sub-minor: TimesNewRoman;
+	--ff-logo: Goatsica;
+}

@@ -1,0 +1,124 @@
+.education-title {
+	display: flex;
+	justify-content: center;
+	color: white;
+	background: var(--bg-opacity);
+	width: 100vw;
+	line-height: 1.2;
+}
+
+.education-body {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0rem 0.5rem;
+}
+
+.education-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	background: var(--bg-opacity);
+	transition: background 1s ease 0s;
+	font-weight: 700;
+	height: 20rem;
+}
+
+.education-item:hover {
+	background: none;
+	cursor: pointer;
+}
+
+.education-item:hover p {
+	color: var(--yellow);
+}
+
+.education-item p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	text-align: center;
+	padding: 0rem 0.5rem;
+	line-height: 2;
+	color: var(--white);
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: var(--ff-minor);
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.education-footer {
+	height: 4rem;
+	width: 100%;
+	background: var(--bg-opacity);
+}
+
+@media (min-width: 22.5rem) {
+	.education-body {
+		padding: 0rem 0.5rem;
+	}
+
+	.education-title {
+		font-size: 2.125rem;
+		align-items: flex-end;
+		padding: 14.5rem 0.5rem 0rem 0.5rem;
+	}
+
+	.education-item {
+		flex: 1 1 100%;
+		padding: 0rem 3rem;
+	}
+
+	.education-item p {
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width: 48rem) {
+	.education-title {
+		font-size: 5.125rem;
+		padding: 10.5rem 0.5rem 0rem 0.5rem;
+	}
+
+	.education-item p {
+		font-size: 1.8rem;
+	}
+}
+
+@media (min-width: 64rem) {
+	.education-body {
+		padding: 0rem;
+	}
+
+	.education-title {
+		font-size: 7.125rem;
+	}
+
+	.education-item {
+		flex: 0 1 50%;
+	}
+}
+
+@media (min-width: 73.214rem) {
+	.education-title {
+		font-size: 5.125rem;
+	}
+
+	.education-title {
+		font-size: 5.125rem;
+		padding: 7.3rem 0.5rem 0rem 0.5rem;
+	}
+
+	.education-item {
+		flex: 0 1 33.333%;
+	}
+
+	.education-item p {
+		font-size: 2.1rem;
+	}
+}

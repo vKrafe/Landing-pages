@@ -1,0 +1,185 @@
+.course-program-title {
+	display: flex;
+	justify-content: center;
+	color: var(--white);
+	font-size: calc(0.5rem + 7 * (100vw / 93.75));
+}
+
+.course-program-tabs {
+	font-size: 1.875rem;
+	line-height: 1.5;
+}
+
+.tab-items {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: 2;
+}
+
+.tab-items > *:not(:last-child) {
+	margin: 0rem 0rem 5rem 0rem;
+}
+
+.tab-item {
+	padding: 1rem;
+	color: var(--white);
+}
+
+.tab-item:hover {
+	background-color: var(--tab-item-bg);
+	color: var(--tab-item-text);
+	transition: all 1.5s ease 0s;
+}
+
+.tab-item:hover > p > strong {
+	color: var(--tab-title-text);
+}
+
+.tab-item > i {
+	font-family: var(--ff-main);
+	letter-spacing: 0.3rem;
+}
+
+.tab-item > p {
+	font-family: var(--ff-minor);
+	letter-spacing: 0.2rem;
+}
+
+.tab-item > p > strong {
+	color: var(--green);
+}
+
+.tab-item > h3 {
+	font-size: calc(1rem + 3 * (100vw / 95));
+	font-family: var(--ff-main);
+	letter-spacing: 0.3rem;
+}
+
+.tab-item > :nth-child(3) {
+	font-size: calc(1rem + 1 * (100vw / 95));
+}
+
+.tab-block {
+	margin: 5rem 0.938rem 4rem 0.938rem;
+	color: var(--white);
+	padding: 0rem;
+	display: none;
+}
+
+.tab-block:target {
+	display: block;
+}
+
+.tab-block > h4 {
+	font-family: var(--ff-main);
+	font-size: calc(1rem + 6 * (100vw / 95));
+	line-height: 1.2;
+	letter-spacing: 0.3rem;
+	color: var(--tab-title-text);
+	margin: 0rem 0rem 3rem 0rem;
+}
+
+.tab-block > h4:not(:first-child) {
+	padding: 10rem 0rem 0rem 0rem;
+}
+
+.tab-block h5 {
+	font-size: calc(2rem + 2 * (100vw / 95));
+	font-weight: 700;
+	line-height: 1.2;
+	font-family: var(--ff-minor);
+	padding: 0rem 0rem 1rem 0rem;
+	color: var(--green);
+}
+
+.tab-block p {
+	font-family: var(--ff-main);
+	letter-spacing: 0.2rem;
+}
+
+.tab-block i {
+	font-family: var(--ff-main);
+	letter-spacing: 0.4rem;
+}
+.tab-block ol li {
+	font-size: calc(0.5rem + 3 * (100vw / 95));
+	padding: 2rem 0rem 0rem 0rem;
+	line-height: 1.2;
+	font-family: var(--ff-minor);
+}
+
+.tab-block ol li::first-word {
+	color: var(--green);
+}
+
+.tab-block ol li i {
+	font-family: var(--ff-main);
+	color: var(--green);
+}
+
+#tab-01 ol li strong {
+	font-family: var(--ff-minor);
+	line-height: 1.4;
+}
+
+#tab-02 ol li strong {
+	font-family: var(--ff-minor);
+	color: var(--green);
+}
+
+.tab-block ol li::marker {
+	content: none;
+}
+
+.tab-block > :last-child {
+	padding: 1rem 0rem 0rem 0rem;
+}
+
+@media (min-width: 22.5rem) {
+	.course-program-title {
+		align-items: flex-end;
+		margin: 0rem 0rem 3rem 0rem;
+	}
+
+	.tab-item {
+		flex: 1 1 100%;
+		margin: 3rem 0rem 0rem 0rem;
+	}
+
+	.tab-item > h3 {
+		padding: 0rem 0rem 3rem 0rem;
+	}
+
+	.tab-item > p > strong {
+		font-size: 2rem;
+	}
+
+	.tab-block {
+		padding: 15rem 0rem 0rem 0rem;
+	}
+}
+
+@media (min-width: 48rem) {
+	.course-program {
+		padding: 10rem 1rem 5rem 1rem;
+	}
+
+	.course-program-title {
+		align-items: center;
+	}
+
+	.tab-item > p > strong {
+		font-size: 2.3rem;
+	}
+
+	.tab-block {
+		padding: 10rem 0rem 0rem 0rem;
+	}
+}
+
+@media (min-width: 64rem) {
+	.course-program-tabs {
+		margin: 0rem 0rem 5rem 0rem;
+	}
+}

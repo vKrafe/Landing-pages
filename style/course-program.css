@@ -1,0 +1,10 @@
+.course-program {
+	background: var(--bg);
+	position: relative;
+}
+
+@media (min-width: 22.5rem) {
+	.course-program {
+		padding: 15rem 1rem 5rem 1rem;
+	}
+}

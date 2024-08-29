@@ -1,0 +1,137 @@
+.footer {
+	background: var(--bg);
+	display: flex;
+}
+
+.footer > * {
+	color: var(--white);
+}
+
+.footer-column {
+	flex: 0 1 33.333%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-column:nth-last-child(2) {
+	justify-content: space-around;
+	font-family: var(--ff-main);
+	letter-spacing: 0.2rem;
+}
+
+.footer-column:nth-last-child(2) span {
+	font-size: 2rem;
+}
+
+.footer-column > * {
+	font-size: 2rem;
+}
+
+.footer-logo {
+	color: var(--green);
+}
+
+.footer-nav {
+	width: 100%;
+	margin: 0rem 0rem 3rem 0rem;
+}
+
+.footer-nav + span {
+	letter-spacing: 0.2rem;
+	font-family: var(--ff-main);
+}
+
+.footer-list {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.footer-item {
+	width: 3.5rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-item > a > img {
+	transform: scale(1.2);
+	transform: scale(1);
+	transition: transform 1s ease 0s;
+}
+
+.footer-item:hover > a > img {
+	transform: scale(1.2);
+	border-radius: 50%;
+	border: 0.2rem solid var(--green);
+}
+
+@media (min-width: 22.5rem) {
+	.footer {
+		flex-direction: column;
+		padding: 18rem 1rem 1rem 1rem;
+	}
+
+	.footer > *:not(:nth-last-child(1)) {
+		margin: 0rem 0rem 3rem 0rem;
+	}
+
+	.footer-column:nth-last-child(1) span {
+		font-size: 1.4rem;
+	}
+
+	.footer-list {
+		height: 3.75rem;
+		justify-content: space-between;
+	}
+
+	.footer-logo {
+		font-size: 6rem;
+	}
+}
+
+@media (min-width: 48rem) {
+	.footer {
+		padding: 3rem 0rem 17rem 0rem;
+	}
+
+	.footer-list {
+		justify-content: space-around;
+	}
+
+	.footer-logo {
+		font-size: 6rem;
+	}
+}
+
+@media (min-width: 64rem) {
+	.footer {
+		padding: 3rem 0rem 39rem 0rem;
+	}
+}
+
+@media (min-width: 75rem) {
+	.footer {
+		flex-direction: row;
+		padding: 3rem 0rem;
+	}
+
+	.footer-list {
+		justify-content: space-between;
+	}
+
+	.footer-column:nth-last-child(1) {
+		order: 2;
+	}
+
+	.footer-column:nth-last-child(2) {
+		order: 3;
+	}
+
+	.footer-column:nth-last-child(3) {
+		order: 1;
+	}
+}

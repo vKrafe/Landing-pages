@@ -1,0 +1,19 @@
+@font-face {
+	font-family: Nozhik;
+	src: url(../fonts/Nozhik.otf) format("truetype");
+}
+
+@font-face {
+	font-family: Crooker;
+	src: url(../fonts/Crooker.otf) format("truetype");
+}
+
+@font-face {
+	font-family: Goatsica;
+	src: url(../fonts/Goatsica-Regular.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: TimesNewRoman;
+	src: url(../fonts/TimesNewRoman.ttf) format("truetype");
+}

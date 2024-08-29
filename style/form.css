@@ -1,0 +1,259 @@
+.form-body {
+	width: 100%;
+	display: block;
+	color: var(--white);
+	padding: 0rem 1rem;
+	margin: 0 auto;
+	position: relative;
+}
+
+.form-body > * {
+	position: relative;
+}
+
+.form-title {
+	display: flex;
+	justify-content: center;
+	font-weight: 700;
+	text-align: center;
+	font-size: calc(1.3rem + 3 * (100vw / 95));
+}
+
+.form-box {
+	display: flex;
+}
+
+.form-box > *:not(:last-child) {
+	margin: 0rem 2rem 0rem 0rem;
+}
+
+.form-box > * {
+	width: 50%;
+}
+
+.form-item {
+	font-family: var(--ff-main);
+	margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.form-label {
+	display: block;
+	margin: 0rem 0rem 1rem 0rem;
+	font-size: calc(1.2rem + 1 * (100vw / 95));
+	font-family: var(--ff-main);
+	letter-spacing: 0.3rem;
+	line-height: 2rem;
+}
+
+.form-input {
+	height: 2rem;
+	padding: 0rem 1.5rem;
+	border-radius: 0.2rem;
+	width: 100%;
+	font-size: 1.5rem;
+	font-family: var(--ff-minor);
+}
+
+.form-input:focus {
+	box-shadow: 0 0 1rem var(--shadow-white);
+}
+
+.options {
+	padding: 1rem 0rem 0rem 0rem;
+}
+
+.options-item {
+	margin: 0rem 0rem 1rem 0rem;
+}
+
+.options-label {
+	display: inline-flex;
+	font-size: 1.5rem;
+	width: 27rem;
+	line-height: 140%;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+	transition: all 1.5s ease 0s;
+	font-family: var(--ff-sub-minor);
+	letter-spacing: 0.2rem;
+	font-weight: 700;
+}
+
+.options-label::before {
+	content: "";
+	align-self: center;
+	flex: 0 0 1.5rem;
+	height: 1.5rem;
+	background-color: var(--white);
+	border-radius: 50%;
+	margin: 0rem 1rem 0rem 0rem;
+}
+
+.options-label::after {
+	content: "";
+	position: absolute;
+	top: 0.55rem;
+	left: 0.25rem;
+	width: 1rem;
+	height: 1rem;
+	background-color: var(--green);
+	border-radius: 50%;
+	transform: scale(0);
+	transition: transform 0.7s ease 0s;
+}
+
+.options-label:hover {
+	color: var(--green);
+	text-shadow: 0 0 1rem var(--shadow-green);
+}
+
+.options-label:focus {
+	color: var(--green);
+	text-shadow: 0 0 1rem var(--shadow-green);
+}
+
+.options-label span {
+	font-size: 1.2rem;
+}
+
+.options-input {
+	display: none;
+}
+
+.options-input:checked + .options-label::after {
+	transform: scale(1);
+}
+
+.options-label:focus::after {
+	transform: scale(1);
+}
+
+.checkbox-input {
+	display: none;
+}
+
+.checkbox-input:checked + .checkbox-label::after {
+	transform: scale(1);
+}
+
+.checkbox-label {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	line-height: 107%;
+	cursor: pointer;
+	font-size: calc(1rem + 0.5 * (100vw / 95));
+	transition: text-shadow 0.5s ease 0s;
+}
+
+.checkbox-label::before {
+	content: "";
+	flex: 0 0 1.5rem;
+	height: 1.5rem;
+	border-radius: 0.1rem;
+	background-color: var(--white);
+	margin: 0rem 1rem 0rem 0rem;
+	align-self: flex-start;
+}
+
+.checkbox-label::after {
+	position: absolute;
+	content: "";
+	top: 0.3rem;
+	left: 0.3rem;
+	width: 1rem;
+	height: 1rem;
+	background-color: var(--green);
+	border-radius: 0.1rem;
+	transform: scale(0);
+	transition: transform 0.5s ease 0s;
+}
+
+.checkbox-label:hover {
+	text-shadow: 0 0 1rem var(--shadow-white);
+}
+
+.checkbox-label:focus {
+	text-shadow: 0 0 1rem var(--shadow-white);
+}
+
+.checkbox-label:focus::after {
+	transform: scale(1);
+}
+
+.checkbox-label span {
+	line-height: 1.7;
+	letter-spacing: 0.2rem;
+}
+
+.checkbox-label span a {
+	color: var(--yellow);
+}
+
+.form-button {
+	font-family: var(--ff-main);
+	width: 100%;
+	height: calc(2rem + 1.8 * (100vw / 95));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(1.5rem + 0.5 * (100vw / 95));
+	text-transform: uppercase;
+	letter-spacing: calc(1rem + 2 * (100vw / 95));
+	transition: all 0.5s ease 0s;
+	text-align: center;
+	border-radius: 5.125rem;
+}
+
+@media (max-width: 47.938rem) {
+	.form-button {
+		font-size: calc(1.5rem + (0.5 + 0.5 * 0.7) * ((100vw - 22.5rem) / 95));
+		letter-spacing: calc(1rem + (3 + 3 * 0.7) * ((100vw - 22.5rem) / 95));
+	}
+}
+
+.form-button:hover {
+	box-shadow: 0 0 1rem var(--shadow-white);
+}
+
+.form-button:focus {
+	box-shadow: 0 0 1rem var(--shadow-white);
+}
+
+@media (min-width: 22.5rem) {
+	.form-body {
+		width: 100%;
+	}
+
+	.form-title {
+		align-items: flex-end;
+		padding: 0rem 0rem 3rem 0rem;
+	}
+}
+
+@media (min-width: 48rem) {
+	.form {
+		margin: 1.25rem 0rem 0rem 0rem;
+	}
+
+	.form-input {
+		height: 2rem !important;
+	}
+
+	.options-label span {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 64rem) {
+	.form-input {
+		height: 3rem !important;
+	}
+}
+
+@media (min-width: 70rem) {
+	.form-body {
+		max-width: 75rem;
+	}
+}

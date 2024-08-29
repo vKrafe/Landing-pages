@@ -1,0 +1,40 @@
+.page-front-background {
+	background: url(../images/page-front/0ae33de4-57e7-474b-9365-81f04e732bb3.png) center / cover no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.page-front-background::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: var(--bg-opacity);
+}
+
+.page-front-background > * strong {
+	color: var(--green);
+	text-shadow: 0 0 1rem var(--shadow-green);
+}
+
+@media (min-width: 22.5rem) {
+	.page-front-background {
+		justify-content: flex-end;
+		padding: 16rem 1rem 0rem 1rem;
+	}
+}
+
+@media (min-width: 48rem) {
+	.page-front-background {
+		padding: 8rem 1rem 0rem 1rem;
+	}
+}
+
+@media (min-width: 64rem) {
+	.page-front-background {
+		padding: 8.3rem 1rem 0rem 1rem;
+	}
+}

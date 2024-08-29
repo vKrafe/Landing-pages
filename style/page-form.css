@@ -1,0 +1,32 @@
+.page-form-background {
+	background: url(../images/page-form/3109425c-2e87-475c-a0f3-861242b602cb.png) center / cover no-repeat;
+	display: flex;
+}
+
+.page-form-background::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: var(--bg-opacity);
+}
+
+@media (min-width: 22.5rem) {
+	.page-form-background {
+		padding: 15rem 0rem 5rem 0rem;
+	}
+}
+
+@media (min-width: 48rem) {
+	.page-form-background {
+		padding: 10rem 0rem 5rem 0rem;
+	}
+}
+
+@media (min-width: 64rem) {
+	.page-form-background {
+		padding: 10rem 1rem 5rem 0rem;
+	}
+}

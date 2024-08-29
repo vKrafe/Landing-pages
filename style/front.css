@@ -1,0 +1,236 @@
+.front-header {
+	position: fixed;
+	top: 0;
+	z-index: 50;
+	background: #585858;
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 0 0.75rem var(--shadow-green);
+}
+
+.front-header ~ * {
+	position: relative;
+}
+
+.front-logo {
+	color: var(--green);
+	display: flex;
+}
+
+.front-menu {
+	flex: 1 1 auto;
+}
+
+.front-list {
+	display: flex;
+	justify-content: space-around;
+}
+
+.front-link {
+	font-family: var(--ff-minor);
+	color: var(--white);
+	transition: all 1s ease 0s;
+}
+
+.front-link:hover {
+	color: var(--green);
+	text-shadow: 0 0 1rem var(--shadow-green);
+}
+
+.front-text {
+	font-family: var(--ff-sub-minor);
+	color: var(--grey);
+}
+
+.front-title {
+	font-weight: 700;
+	text-shadow: none !important;
+	color: var(--white) !important;
+	letter-spacing: 0rem !important;
+}
+
+.front-subtitle {
+	font-family: var(--ff-sub-minor);
+	color: var(--grey);
+}
+
+.front-subtitle > strong {
+	font-size: calc(1rem + 4 * (100vw / 95));
+}
+
+.front-button {
+	color: #bcbcbc;
+	position: relative;
+	border: none;
+	outline: none;
+	background: var(--front-button-bg);
+	border-radius: 5.125rem;
+	cursor: pointer;
+	z-index: 0;
+	box-shadow:
+		inset 0.625rem 0.625rem 0.625rem -0.063rem var(--front-button-shadow),
+		inset -0.625rem -0.625rem 0.625rem -0.063rem var(--white);
+}
+
+.front-button a {
+	font-family: var(--ff-main);
+	color: var(--front-button-text);
+	transition: all 1s ease 0s;
+}
+
+.front-button a:hover {
+	color: var(--scrollbar-thumb);
+	text-shadow: 0rem 0rem 1rem var(--shadow-green);
+}
+
+@media (min-width: 22.5rem) {
+	.front-header {
+		width: 90vw;
+		padding: 1rem 0rem;
+	}
+
+	.front-logo {
+		flex: 0 1 10rem;
+		font-size: 1.9rem;
+		justify-content: center;
+	}
+
+	.front-list {
+		flex-direction: column;
+	}
+
+	.front-list > *:not(:last-child) {
+		margin: 0rem 0rem 1rem 0rem;
+	}
+
+	.front-link {
+		font-size: 1.2rem;
+		line-height: 1.1;
+	}
+
+	.front-text {
+		font-size: 1.2rem;
+	}
+
+	.front-title {
+		font-size: 2rem;
+		padding: 3rem 1rem;
+		line-height: 1.3;
+	}
+
+	.front-subtitle {
+		font-size: 1.35rem;
+		line-height: 1.3;
+		padding: 0rem 1rem;
+		text-align: center;
+	}
+
+	.front-button {
+		margin: 3rem 0rem 2rem 0rem;
+	}
+
+	.front-button a {
+		display: block;
+		padding: 1rem 1rem;
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 48rem) {
+	.front-header {
+		min-height: 5rem;
+	}
+
+	.front-header ~ * {
+		text-align: center;
+	}
+
+	.front-menu {
+		justify-content: space-around;
+	}
+
+	.front-logo {
+		flex: 0 1 5rem;
+		font-size: 1.45rem;
+		justify-content: flex-end;
+	}
+
+	.front-list {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.front-list > *:not(:last-child) {
+		margin: 0rem;
+	}
+
+	.front-link {
+		font-size: 0.9rem;
+	}
+
+	.front-text {
+		font-size: 1.2rem;
+	}
+
+	.front-title {
+		font-size: 4.3rem;
+		padding: 4rem 1rem;
+		line-height: 1.3;
+	}
+
+	.front-subtitle {
+		font-size: 2rem;
+		line-height: 1.3;
+		padding: 0rem 1.5rem;
+	}
+
+	.front-button {
+		margin: 3rem 0rem 2rem 0rem;
+	}
+
+	.front-button a {
+		font-size: 4rem;
+	}
+}
+
+@media (min-width: 64rem) {
+	.front-header {
+		width: 80vw;
+	}
+
+	.front-logo {
+		flex: 0 1 15rem;
+		font-size: 3rem;
+		justify-content: center;
+	}
+
+	.front-button {
+		margin: 6rem 0rem;
+	}
+
+	.front-button a {
+		padding: 2rem 6rem;
+	}
+}
+
+@media (min-width: 75rem) {
+	.front-link {
+		font-size: 2rem;
+	}
+
+	.front-text {
+		font-size: 2rem;
+	}
+
+	.front-title {
+		font-size: 8.3rem;
+		padding: 4rem 2rem;
+	}
+
+	.front-button {
+		margin: 11rem 0rem 2rem 0rem;
+	}
+}

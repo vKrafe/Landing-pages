@@ -1,0 +1,11 @@
+.page-education-background {
+	position: relative;
+	background: url(../images/page-education/2650625b-a416-4e0d-9b53-399a4daab021.png) center / cover no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.page-education-background > * {
+	position: relative;
+}
